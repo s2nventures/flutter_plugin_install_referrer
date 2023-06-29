@@ -9,9 +9,7 @@ import 'package:pigeon/pigeon.dart';
     objcOptions: ObjcOptions(
       prefix: 'IR',
     ),
-    dartOptions: DartOptions(
-      isNullSafe: true,
-    ),
+    dartOptions: DartOptions(),
     dartOut: './lib/src/private/pigeon_api.dart',
     objcHeaderOut: './ios/Classes/Messages.h',
     objcSourceOut: './ios/Classes/Messages.m',
@@ -57,6 +55,7 @@ enum IRInstallationPlatform {
 enum IRPlatform {
   ios,
   android,
+  macos,
 }
 
 @HostApi()

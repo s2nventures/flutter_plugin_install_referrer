@@ -15,7 +15,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^1.0.0
-  pigeon: ^2.0.2
+  pigeon: ^10.1.0
 
 flutter:
   plugin:
@@ -24,4 +24,6 @@ flutter:
         package: fr.g123k.install_referrer
         pluginClass: InstallReferrerPlugin
       ios:
+        pluginClass: InstallReferrerPlugin
+      macos:
         pluginClass: InstallReferrerPlugin

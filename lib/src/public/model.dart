@@ -18,12 +18,12 @@ class InstallationApp {
 
 /// Result from a call to [InstallReferrer.referrer]
 enum InstallationAppReferrer {
-  // iOS - Apple App Store
-  iosAppStore,
-  // iOS - Test Flight
-  iosTestFlight,
-  // iOS - Debug mode (simulator)
-  iosDebug,
+  // Apple App Store
+  appleAppStore,
+  // Apple TestFlight
+  appleTestFlight,
+  // Apple - Debug mode (simulator)
+  appleDebug,
   // Android - Google Play
   androidGooglePlay,
   // Android - Amazon AppStore

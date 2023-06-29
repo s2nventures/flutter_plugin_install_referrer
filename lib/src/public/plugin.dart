@@ -34,7 +34,8 @@ class InstallReferrer {
   ) {
     switch (referrer.platform) {
       case IRPlatform.ios:
-        return _iOSReferrer(
+      case IRPlatform.macos:
+        return _appleReferrer(
           referrer.installationPlatform,
         );
       case IRPlatform.android:
@@ -51,18 +52,18 @@ class InstallReferrer {
 
   /// Detect on which platform the iOS app was installed
   /// Possible values are:
-  /// - [InstallationAppReferrer.iosAppStore]
-  /// - [InstallationAppReferrer.iosTestFlight]
-  /// - [InstallationAppReferrer.iosDebug]
-  static InstallationAppReferrer _iOSReferrer(
+  /// - [InstallationAppReferrer.appleAppStore]
+  /// - [InstallationAppReferrer.appleTestFlight]
+  /// - [InstallationAppReferrer.appleDebug]
+  static InstallationAppReferrer _appleReferrer(
     IRInstallationPlatform? platform,
   ) {
     if (platform == IRInstallationPlatform.appleAppStore) {
-      return InstallationAppReferrer.iosAppStore;
+      return InstallationAppReferrer.appleAppStore;
     } else if (platform == IRInstallationPlatform.appleTestflight) {
-      return InstallationAppReferrer.iosTestFlight;
+      return InstallationAppReferrer.appleTestFlight;
     } else {
-      return InstallationAppReferrer.iosDebug;
+      return InstallationAppReferrer.appleDebug;
     }
   }
 

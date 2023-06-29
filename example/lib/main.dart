@@ -67,11 +67,11 @@ class MyApp extends StatelessWidget {
 
   String referrerToReadableString(InstallationAppReferrer referrer) {
     switch (referrer) {
-      case InstallationAppReferrer.iosAppStore:
+      case InstallationAppReferrer.appleAppStore:
         return "Apple - App Store";
-      case InstallationAppReferrer.iosTestFlight:
+      case InstallationAppReferrer.appleTestFlight:
         return "Apple - Test Flight";
-      case InstallationAppReferrer.iosDebug:
+      case InstallationAppReferrer.appleDebug:
         return "Apple - Debug";
       case InstallationAppReferrer.androidGooglePlay:
         return "Android - Google Play";
