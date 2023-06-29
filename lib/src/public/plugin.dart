@@ -4,8 +4,7 @@ import '../private/pigeon_api.dart';
 
 /// Detect which application (or store) installed an Android or iOS application
 class InstallReferrer {
-  static late final InstallReferrerInternalAPI _api =
-      InstallReferrerInternalAPI();
+  static final InstallReferrerInternalAPI _api = InstallReferrerInternalAPI();
 
   /// Provide app information with:
   /// - Package name / app id

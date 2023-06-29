@@ -6,6 +6,8 @@ import 'package:pigeon/pigeon.dart';
       className: 'InstallReferrerPigeon',
       package: 'fr.g123k.install_referrer',
     ),
+    javaOut:
+        './android/src/main/java/fr/g123k/install_referrer/InstallReferrerPigeon.java',
     objcOptions: ObjcOptions(
       prefix: 'IR',
     ),
@@ -13,8 +15,6 @@ import 'package:pigeon/pigeon.dart';
     dartOut: './lib/src/private/pigeon_api.dart',
     objcHeaderOut: './ios/Classes/Messages.h',
     objcSourceOut: './ios/Classes/Messages.m',
-    javaOut:
-        './android/src/main/java/fr/g123k/install_referrer/InstallReferrerPigeon.java',
   ),
 )
 class IRInstallationReferer {
